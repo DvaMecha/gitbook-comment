@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "mkdir -p assets; lessc ./less/style.less > ./assets/comment.css; minify --output ./assets/comment.js ./js/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/DvaMecha/gitbook-comment/issues"
   },
+  
   "homepage": "https://github.com/DvaMecha/gitbook-comment#readme"
 }
